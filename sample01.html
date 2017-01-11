@@ -5,19 +5,28 @@
 </head>
 <body>
 <script>
-  function setWidth() {
-  var width = 100;
-  }
-  setWidth();
 
-  var age = 100;
-  if(age > 12) {
-    let dogYears = age * 7;
-    console.log('You are ${dogYears} dog years old!');
-  }
+const names = ['Eisuke', 'Wes', 'Lux'];
 
-  const key = 'abc123';
-  let points = 50;
+const fullNames = names.map(function(name) {
+  return `${name} boss`;
+});
+
+const fullNames2 = names.map((name) => {
+  return `${name} boss`;
+});
+
+const fullNames3 = names.map(name => {
+  return `${name} boss`;
+});
+
+const fullNames4 = names.map(name => `${name} boss`);
+
+const fullNames5 = names.map(() => `boss`);
+
+const sayMyName = (name) => { alert(`Hello ${name}!`)};
+
+sayMyName('Eisuke');
 
 </script>
 </body>
